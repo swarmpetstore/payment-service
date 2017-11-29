@@ -53,6 +53,16 @@
             <artifactId>cdi</artifactId>
             <version>${version.wildfly.swarm}</version>
         </dependency>
+        <dependency>
+            <groupId>org.wildfly.swarm</groupId>
+            <artifactId>jpa</artifactId>
+            <version>${version.wildfly.swarm}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+            <version>1.0.0.Final</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -68,9 +78,6 @@
                 <groupId>org.wildfly.swarm</groupId>
                 <artifactId>wildfly-swarm-plugin</artifactId>
                 <version>${version.wildfly.swarm}</version>
-                <configuration>
-                    <mainClass>org.packt.swarm.petstore.payment.Main</mainClass>
-                </configuration>
                 <executions>
                     <execution>
                         <goals>
